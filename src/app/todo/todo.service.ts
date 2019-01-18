@@ -7,13 +7,13 @@ import { UUID } from 'angular2-uuid';
 //import 'rxjs/add/operator/toPromise';
 //import { Observable } from 'rxjs';
 
-//@Injectable({
-//  providedIn: 'root'
-//})
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
+//@Injectable()
 export class TodoService {
 
-  private api_url = 'api/todos';
+  private api_url = 'http://localhost:3000/todos';
   private httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };

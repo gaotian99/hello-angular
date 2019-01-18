@@ -6,6 +6,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 
+//@Injectable()
+
 export class InMemoryTodoDbService implements InMemoryDbService {
   createDb() {
     let todos: Todo[] = [
